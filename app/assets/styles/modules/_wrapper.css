@@ -15,4 +15,16 @@
     .wrapper {
         padding: 0;
     }
+    &--no-padding-until-medium {
+        padding: 0;
+        @mixin atMedium {
+            padding: 0 18px;
+        }
+    }
+    &--no-padding-until-large {
+        padding: 0;
+        @mixin atLarge {
+            padding: 0 18px;
+        }
+    }
 }
